@@ -1,3 +1,3 @@
-# Projeto de base para desenvolvimento de páginas web
+# Exibição simples de mapas com Leaflet JS
 
-* Html5, Css3, Sass, Js, Jquery e bootstrap
+* Html5, Css3, Sass, Js,  Jquery, LeafletJS e bootstrap
