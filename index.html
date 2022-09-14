@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, SASS, JavaScript, Jquery, Bootstrap, Font Awesome">
+    <meta name="author" content="Jaylan Esquivel">
+    <!-- stylesheet includes -->
+    <link href="./assets/bootstrap-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+	 <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+	<style>
+	
+	#map { height: 500px; }
+
+	
+	</style>
+	
+	
+	<!-- stylesheet includes -->
+    <title>Leaflet JS</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container  text-center">
+            <div class="row">
+                <div class="col align-self-center">
+                    <h1>Mapa simples com leafletjs!</h1>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col align-self-center">
+					 <div id="map"></div>
+				</div>
+            </div>
+			
+        </div>
+    </div>
+
+
+     <!-- JavaScript includes -->
+     <script src="https://kit.fontawesome.com/f35f15f80c.js" crossorigin="anonymous"></script>
+     <script src="./assets/js/jquery-3.5.1.js"></script>
+     <script src="./assets/bootstrap-dist/js/bootstrap.bundle.min.js"></script>
+     <script src="./assets/js/myfunctions.js"></script>
+	 
+	 <script>
+		
+			var map = L.map('map').setView([51.505, -0.09], 13);
+				L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+					maxZoom: 19,
+					attribution: '© OpenStreetMap'
+				}).addTo(map);
+					 
+	 
+	 </script>
+	 
+	 
+     <!-- JavaScript includes -->
+</body>
+</html>
